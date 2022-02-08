@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS boiler plate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;700&family=Lato:wght@700&family=Merriweather&family=Space+Mono&family=Syne:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;700&family=Lato:wght@700&family=Merriweather&family=Space+Mono&family=Spartan:wght@400;700&family=Syne:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="menu">
+        <div class ="menuleft">
+            <div class ="menuitems" id="menuitem1">
+                Home
+            </div>
+            <div class ="menuitems" id="menuitem2">
+                My Books
+            </div>
+            <div class ="menuitems" id="menuitem3">
+                Dashboard
+            </div>
+            <div class ="menuitems" id="menuitem3">
+                Community
+            </div>
+        </div>
+        <div class ="menuitems"> 
+            <img src="goodreads logo.png" width="180" height="40">
+        </div>
+        <div class ="menuright">
+            <div class="searchbar" id="searchtext">
+                <div class ="searchkey">
+                <i class="fas fa-search"></i>
+            </div>
+                <input type="text" class= "input" placeholder="Search books...">
+            </div>
+        </div>
+    </div>
+
+     <div class="menu2">
+        <div class ="meet" id="slide-up">
+            Hello <span style="color:#5A9A6D">Julie</span>,
+            <br> 
+            Welcome back!
+        </div> 
+    </div>
+
+    <div class="hero">
+        <div class= "row">
+            <div class ="row-item">
+                <img src="book1.jpg">
+            </div>
+            <div class ="row-item">
+                <img src="book2.jpg">
+            </div>
+            <div class ="row-item">
+                <img src="book3.jpg">
+            </div>
+            <div class="shelf"></div>
+        </div>
+    </div> 
+    
+
+    <div class="subtext">
+        This is your <span style="color:#5A9A6D">current</span> bookshelf.
+    </div>
+
+    <div class="subtext2">
+        Keep scrolling!
+    </div>
+
+    <div class= "rectangle" id="slide-up">
+        <div class= "rectangletxt">
+            Currently Reading
+        </div>
+        <div class="rectanglepic">
+            <img src= "book19.jpeg">
+        </div>
+        <div class= "progressbar">
+            <div class= "progressbarinternal"></div>
+        </div>
+        
+    </div>
+
+    <div class="arrowbox" id="slide-up">
+        <div class="arrowminibox">
+            <img src="Arrow.png">
+        </div>
+    </div>
+
+ <div class="section1">
+        <div class="section1txt" id="slide-up">
+            Today's pick for <span style="color:#5A9A6D">you.</span>
+        </div>
+        <div class="todayrectangle">
+            <div class="todayrectanglepic">
+                <img src= "book15.jpeg">
+            </div>
+        </div>
+        <div class ="containerright">
+            <svg viewBox= "0 0 800 1000">
+                <g> 
+                    <path id="you" fill= "transparent" d="
+                    M317.35,63.04c-9.91,1.67-69.76,12.72-97.96,64.45c-15.91,29.18-18.38,65.14-9.17,93.12
+                    c30.55,92.8,176.03,56.35,294.44,165.28c5.39,4.96,130.5,123.38,99.49,258.04C589.62,707.09,542.02,768.21,482.44,797
+                    c-66.36,32.06-102.11,2.03-165.28,41.67c-52.21,32.76-47.55,65.66-95.83,98.61c-32.73,22.34-85.53,41.79-173.61,29.17">
+                    </path>
+                </g>
+                <text width="100%" style="transform:translate3d(0,0,0); fill:#7C5648;">
+                    <textPath style="transform:translate3d(0,0,0);" alignment-baseline="top" xlink:href="#you">You
+                    <animate attributeName="startOffset" from="100%" to="0%" begin="0" dur="10s"  repeatCount="indefinite" keyTimes="0;1" calcMode="spline" keySplines=".37,.07,.47, .94" /> 
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+    </div>
+
+
+
+<!-- 
+    <div class="section2">
+        <div class="marqueeline"></div>
+        <div class="marqueetxt">
+            New This Week. New This Week. New This Week.
+        </div>
+        <div class="marqueeline"></div>
+            
+
+        <div class="marqueeline"></div>
+
+
+        <div class="marqueeline"></div>
+
+    </div> -->
+
+<div class="footer">
+    <div class ="menuleft">
+        <div class ="menuitems" id="menuitem1">
+            About Us
+        </div>
+        <div class ="menuitems" id="menuitem2">
+            Careers
+        </div>
+        <div class ="menuitems" id="menuitem3">
+            Contact Us
+        </div>
+        </div> 
+     <div><h1>Happy Reading!</h1></div>
+     <div class ="menuright2"> 
+            <img src="App Store.png" width="110" height="36">
+            <img src="Google Play.png" width=130" height="55">
+    </div>
+    </div>
+</div>
+ 
+    
+</body>
+</html>
+
+
+
