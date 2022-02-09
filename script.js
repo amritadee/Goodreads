@@ -1,6 +1,26 @@
 
 $(document).ready(function(){
 
+    // scroll event listener
+
+    window.addEventListener("scroll", function(event){
+        var scroll =this.scrollY;
+        console.log(scroll)
+
+        if (scroll>500){
+            console.log("animatetext!")
+            $(".section1txt").show()
+            $(".section1txt").addClass("slide-up")
+
+        }
+
+        // if (scroll>2000)
+        //     console.log("goodbyearrow")
+        //     $(".arrowbox").show()
+        //     $(".arrowbox").hide()
+  
+    });
+
 
     $(".searchkey").click(function(){
         $(".fas").toggleClass("color-white");
@@ -17,6 +37,10 @@ $(document).ready(function(){
         $(this).toggleClass("zoom")
     })
 
+    $(".section1txt").hover(function(){
+        $(this).toggleClass("grey")
+    })
+
     $(".container").hover(function(){
         $(this).toggleClass("zoom")
     })
@@ -26,20 +50,10 @@ $(document).ready(function(){
     })
 
     $(".menuleft").children().click(function(){
-        $(this).toggleClass("menuitems")
+        // $(this).toggleClass("menuitems")
         $(this).toggleClass("menuitems2")
     })
 
-    // $('.zoomimg').hover(function() {
-    //     $(this).css("cursor","pointer");
-    //     $(this).animate({width: "90%", height: "110%"}, 'slow');
-
-    // }, function() {
-    // $(this).animate({
-    //     width: "100%"
-    // }, 'slow');
-
-    // })
 
     $('.scroll-box').mouseenter(function () {
         $(this).stop();
@@ -65,6 +79,7 @@ $(document).ready(function(){
     });
 
      $( ".row-item").draggable();
+     $( ".todayrectanglepic").draggable();
 
 });
 

@@ -5,11 +5,8 @@
     scroll-behavior: smooth;  
 }
 
-
 textPath{
-    font-size: 150px;
-
-
+    font-size: 170px;
 }
 
 
@@ -35,47 +32,21 @@ h1{
     z-index: 1000;
 }
 
-.containerright{
-    background-color: red;
-    width: 600px;
-    height: 1000px;
-    min-width: 0px;
-    min-height: 0px;
-    margin-bottom: 600px;
-    overflow: hidden;
-    position: absolute;
-    right: 0px;
-    top: 500px;
-}
 
-
-.footer{
-    background-color: #F4F1EB;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    justify-content: space-between;
-    z-index: 100;
-    text-align: center;
-}
 
 .menuleft{
     display: flex;
-    min-width: 450px;
+    width: 450px;
 }
 
 .menuleft2{
     display: flex;
-    min-width: 450px;
+    width: 450px;
 }
 
 .menuright{
     display: flex;
-    min-width: 300px;
+    width: 450px;
     justify-content: right;
     align-items: center;
     padding-right: 10px;
@@ -100,19 +71,19 @@ h1{
 
 
 .menuitems{
-    height: 90%;
+    height:100%;
     flex-grow: 1;
     flex-shrink: 1;
     background-color: #F4F1EB;
-    margin-right: 20px;
     font-size: 14px;
     color:#7C5648;
     font-family: 'Archivo Black', sans-serif;
     display: flex;
     align-items: center;  
     justify-content: center;
-    transition: flex-grow .7s;
+    width:450px;
     margin: 20px;
+    transition: flex-grow .7s;
     transition: .7s;
 }
 
@@ -128,6 +99,7 @@ h1{
     min-width: 300px;
     justify-content: right;
     align-items: right;
+    width:450px;
 }
 
 .menuright2 img{
@@ -235,8 +207,7 @@ input {
 
 .menuitems2 {
     height: 100%;
-    flex-grow: 8;
-    flex-shrink: 1;
+    max-width: 100px;
     flex-basis: auto;
     background-color: #ffffff;
     font-weight: bold;
@@ -346,37 +317,6 @@ p{
     z-index: 2;
 }
 
-.subtext{
-    position: absolute;
-    width: 487px;
-    height: 39px;
-    left: 105px;
-    top: 870px;
-    font-family: Spartan;
-    font-style: normal;
-    font-weight: bold;
-    text-align: left;
-    font-size: 30px;
-    line-height: 120.5%;   
-    letter-spacing: -0.02em; 
-    color: #000000;
-}
-
-.subtext2{
-    position: absolute;
-    width: 252px;
-    height: 39px;
-    left: 1150px;
-    top: 870px;
-    font-family: Spartan;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 120.5%;
-    letter-spacing: -0.02em;
-    color: #000000;
-}
-
 
 
 .scroll-box {
@@ -392,11 +332,10 @@ p{
 }
 
 .shelf{
-    width: 100vw;
+    width: 90vw;
     height: 20px;
     background-color:#342315;
     margin-top: 290px;
-    left: -102px;
     position: absolute;
 }
 
@@ -414,7 +353,8 @@ p{
     justify-content:start;
     align-items: left;
     row-gap: 20px;
-    width: 1280px;
+    width: 100vw;
+    padding-left:100px;
 }
 
 .row-item{
@@ -494,17 +434,18 @@ p{
 }
 
 
-.arrowbox{
+/* .arrowbox{
     position: fixed;
     width: 60px;
     height: 60px;
+    top: 115%;
     left: 1291px;
     top: 650px;
     background: #F1E8DB;
     border-radius: 20px;
     box-shadow: 0 0 10px 1px #d6cec3;
     z-index: 1000;
-}
+} */
 
 .arrowminibox{
     width: 38px;
@@ -522,65 +463,19 @@ p{
     object-fit: cover;
 }
 
-.section1{
-    position: absolute;
-    width: 100vw;
-    left: 25px;
-    text-align: left;
-    font-family: Spartan;
-    font-style: normal;
-    font-weight: bold;
-    background-color: royalblue;
-}
-
-.section2{
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Spartan;
-    left: 25px;
-    text-align: left;
-}
 
 
-.section1txt{
-    position: absolute;
-    width: 1126px;
-    height: 96px;
-    left: 80px;
-    top:200px;
-    text-align: left;
-    font-family: Spartan;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 70px;
-    line-height: 120.5%;
-    letter-spacing: -0.02em;
-    color: #000000;
-}
 
-#slide-up{
-    animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both
+.slide-up{
+    animation: slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both
 }
 
 @keyframes slide-up{
-    0% {transform: translateY(300px)}
+    0% {transform: translateY(500px)}
     100% {transform: translateY(0)}
 }
 
-.todayrectangle{
-    position: absolute;
-    width: 420.75px;
-    height: 558px;
-    left: 85px;
-    top: 300px;
-    background: #E3D0B3;
-    align-items: center;
-    align-self: center;
-    display: flex;
-    border-radius: 20px;
-}
+
 
 
 .todayrectangle.zoom{
@@ -589,41 +484,13 @@ p{
 
 
 .meet.zoom{
-    color: #342315;
+    color: #414141;
+    transform: rotate(0.5turn);
 }
 
-.todayrectanglepic{
-    width: 337.5px;
-    height: 487.5px;
-    z-index: 100;
-    margin-left: 14px;
-    top: 1000px;
-    display: flex;
-    margin: auto;
-}
-
-.todayrectanglepic img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-    display: flex;
-}
-
-
-#todaytext{
-    position: absolute;
-    width: 1126px;
-    height: 96px;
-    left: 25px;
-    top: 738px;
-    text-align: left;
-    font-family: Spartan;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 70px;
-    line-height: 120.5%;
-    letter-spacing: -0.02em;
-    color: #000000;
+.section1txt.grey{
+    color: #414141;
+    transform: rotate(0.5turn);
 }
 
 
@@ -654,16 +521,133 @@ p{
 }
 
 
-/* 
-.containeright{
+
+
+
+/*  Serena's code */
+
+
+body {
+    background-color: #F9F7F4;
+}
+
+
+.subtext-container {
+    padding: 24px;
+    margin-left: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtext{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    line-height: 120.5%;   
+    letter-spacing: -0.02em; 
+    color: #000000;
+}
+
+.subtext2{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 120.5%;
+    letter-spacing: -0.02em;
+    padding-right: 40px;
+    color: #000000;
+}
+
+
+
+ .section1{
+    position: relative;
+    padding: 48px 24px;
+    height: 1300px;
+    width: 100vw;
+    text-align: left;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    background-color: #F9F7F4;
+}
+
+.section1txt{
+    width: 1126px;
+    height: 96px;
+    text-align: left;
+    font-family: Spartan;
+    font-style: normal;
+    margin-left: 70px;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 120.5%;
+    letter-spacing: -0.02em;
+    color: #000000;
+    display: none;
+    margin-bottom: 40px;
+} 
+
+
+.todayrectangle{
+    width: 420.75px;
+    height: 558px;
+    background: #E3D0B3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    margin-left: 70px;
+    
+} 
+
+.todayrectanglepic{
+    width: 337.5px;
+    height: 487.5px;
+    z-index: 100;
+}
+
+.todayrectanglepic img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerright{
     background-color: transparent;
-    width: 800px;
-    height: 300px;
-    min-width: 0px;
-    min-height: 0px;
-    margin-bottom: 600px;
-    overflow: hidden;
-    display: relative;
-} */
+    width: 600px;
+    height: 50%;
+    position: absolute;
+    right: 0px;
+    top: 150px;
+}
+
+.footer{
+    background-color: #F4F1EB; 
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+}
+
+
+.arrowbox{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top: 115%;
+    background: #F1E8DB;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px #d6cec3;
+    z-index: 1000;
+}
+
+/* Serena's code end */
+
 
 

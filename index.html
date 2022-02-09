@@ -49,7 +49,7 @@
     </div>
 
      <div class="menu2">
-        <div class ="meet" id="slide-up">
+        <div class ="meet slide-up">
             Hello <span style="color:#5A9A6D">Julie</span>,
             <br> 
             Welcome back!
@@ -70,8 +70,9 @@
             <div class="shelf"></div>
         </div>
     </div> 
-    
 
+<!-- Added a container for the subtext elements so we can apply flexbox to the container -->
+<div class = "subtext-container">
     <div class="subtext">
         This is your <span style="color:#5A9A6D">current</span> bookshelf.
     </div>
@@ -79,8 +80,10 @@
     <div class="subtext2">
         Keep scrolling!
     </div>
+</div>
 
-    <div class= "rectangle" id="slide-up">
+<!-- moved the arrow box inside the "rectangle div so that it stays with the "currently reading" rectangle -->
+    <div class= "rectangle slide-up">
         <div class= "rectangletxt">
             Currently Reading
         </div>
@@ -91,16 +94,17 @@
             <div class= "progressbarinternal"></div>
         </div>
         
-    </div>
 
-    <div class="arrowbox" id="slide-up">
-        <div class="arrowminibox">
-            <img src="Arrow.png">
+        <div class="arrowbox slide-up">
+            <div class="arrowminibox">
+                <img src="Arrow.png">
+            </div>
         </div>
     </div>
 
+
  <div class="section1">
-        <div class="section1txt" id="slide-up">
+        <div class="section1txt">
             Today's pick for <span style="color:#5A9A6D">you.</span>
         </div>
         <div class="todayrectangle">
@@ -109,7 +113,7 @@
             </div>
         </div>
         <div class ="containerright">
-            <svg viewBox= "0 0 800 1000">
+            <svg viewBox= "0 0 990 1700">
                 <g> 
                     <path id="you" fill= "transparent" d="
                     M317.35,63.04c-9.91,1.67-69.76,12.72-97.96,64.45c-15.91,29.18-18.38,65.14-9.17,93.12
@@ -117,32 +121,15 @@
                     c-66.36,32.06-102.11,2.03-165.28,41.67c-52.21,32.76-47.55,65.66-95.83,98.61c-32.73,22.34-85.53,41.79-173.61,29.17">
                     </path>
                 </g>
-                <text width="100%" style="transform:translate3d(0,0,0); fill:#7C5648;">
+                <text width="100%" style="transform:translate3d(0,0,0); fill:#5A9A6D;">
                     <textPath style="transform:translate3d(0,0,0);" alignment-baseline="top" xlink:href="#you">You
-                    <animate attributeName="startOffset" from="100%" to="0%" begin="0" dur="10s"  repeatCount="indefinite" keyTimes="0;1" calcMode="spline" keySplines=".37,.07,.47, .94" /> 
+                    <animate attributeName="startOffset" from="0%" to="100%" begin="0" dur="7s"  repeatCount="indefinite" keyTimes="0;1" calcMode="spline" keySplines=".37,.07,.47, .94" /> 
                     </textPath>
                 </text>
             </svg>
         </div>
     </div>
 
-
-
-<!-- 
-    <div class="section2">
-        <div class="marqueeline"></div>
-        <div class="marqueetxt">
-            New This Week. New This Week. New This Week.
-        </div>
-        <div class="marqueeline"></div>
-            
-
-        <div class="marqueeline"></div>
-
-
-        <div class="marqueeline"></div>
-
-    </div> -->
 
 <div class="footer">
     <div class ="menuleft">
@@ -156,14 +143,15 @@
             Contact Us
         </div>
         </div> 
-     <div><h1>Happy Reading!</h1></div>
-     <div class ="menuright2"> 
+     <div class ="menuitems"><h1>Happy Reading!</h1></div>
+     <div class ="menuright"> 
             <img src="App Store.png" width="110" height="36">
             <img src="Google Play.png" width=130" height="55">
     </div>
-    </div>
 </div>
- 
+
+
+
     
 </body>
 </html>
